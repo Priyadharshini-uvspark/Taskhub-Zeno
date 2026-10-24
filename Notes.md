@@ -1,8 +1,46 @@
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+DAY 1 — M1: GIT PRACTICE NOTES
 
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+1. Git Branch
+git branch — Shows all the branches in my repository.
+git switch -c m1-git-practice — Creates a new branch and switches to it.
+git switch branch-name — Switches to an existing branch.
 
+2. Git Commits
+git status — Shows my current branch and the status of my files.
+git add filename — Selects a file's changes for the next commit.
+git commit -m "message" — Saves the staged changes as a commit.
+git log --oneline — Shows the commit history in a short format.
 
-Another final para to test 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula ullamcorper diam, eu consequat mi vestibulum volutpat. In consectetur imperdiet sapien sit amet pellentesque. Integer bibendum nec nulla quis fringilla. Nullam sit amet scelerisque turpis, ut sagittis ligula. Phasellus ac nunc ac dui ornare condimentum. Aliquam vestibulum sapien augue, a efficitur mauris condimentum id. Ut nunc elit, venenatis rutrum augue eget, hendrerit euismod ligula. Vestibulum auctor fermentum orci et luctus. Maecenas gravida id eros sit amet placerat. Nulla vulputate quis dolor non bibendum. Praesent venenatis ante vel risus tempus, a consequat elit maximus.
+3. Push and Pull Request
+git push -u origin m1-git-practice — Uploads my branch and its commits to GitHub.
+A pull request (PR) allows me to propose my changes for review before merging them into another branch.
+
+4. Merge Conflict
+A merge conflict happens when Git cannot automatically combine changes from different branches.
+I created two branches and changed the same file differently to practise a merge conflict.
+I resolved the conflict by editing the file and choosing the final content I wanted to keep.
+git add conflict.txt — Stages the resolved file.
+git merge conflict-a — Merges the changes from conflict-a into my current branch.
+
+5. Git Stash
+git stash — Temporarily saves my uncommitted changes and removes them from my working directory.
+git stash pop — Restores my stashed changes and removes the stash entry if it applies successfully.
+
+6. Git Reset Soft
+git reset --soft HEAD~1 — Moves my current branch back by one commit while keeping the changes staged.
+
+7. Git Revert
+git revert commit-id — Creates a new commit that reverses the changes from an earlier commit. The original commit remains in the history.
+
+8. Git Log Graph
+git log --oneline --graph — Shows commit history in a short format and displays a graph of branches and merges.
+
+9. What I Learned
+A branch allows me to work separately from another branch.
+A commit saves a checkpoint of my changes.
+A pull request allows others to review my changes before merging.
+A merge conflict happens when Git cannot automatically combine changes, so I must resolve it.
+Stash temporarily puts uncommitted changes aside.
+Reset soft moves the branch pointer but keeps changes staged.
+Revert undoes changes by creating a new commit.
+Git log helps me understand my project's commit history.
